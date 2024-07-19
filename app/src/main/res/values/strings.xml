@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lis-Health</string>
+    <string name="ajustes">Ajustes</string>
+    <string name="menu">Início</string>
+    <string name="perfil">Perfil</string>
+    <string name="registros">Registros</string>
+
+
+
+</resources>
