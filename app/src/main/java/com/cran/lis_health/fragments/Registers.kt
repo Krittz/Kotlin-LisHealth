@@ -1,4 +1,4 @@
-package com.cran.lis_health
+package com.cran.lis_health.fragments
 
 import android.os.Build
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.cran.lis_health.R
 import com.cran.lis_health.adapter.RegisterAdapter
 import com.cran.lis_health.model.Register
-import com.cran.lis_health.model.User
 import java.time.LocalDateTime
 
 class Registers : Fragment() {

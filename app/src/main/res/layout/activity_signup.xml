@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/background"
+    tools:context=".auth.SignUpActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView android:id="@+id/appCompatTextView3"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginStart="35dp" android:layout_marginTop="93.81dp"
+        android:fontFamily="@font/poppins_semi_bold" android:text="@string/cadastre_se"
+        android:textColor="@color/white" android:textSize="38sp"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/signupName"
+        android:layout_width="344dp" android:layout_height="65.52dp"
+        android:layout_marginTop="28.19dp" android:layout_marginBottom="19.52dp"
+        android:background="@drawable/button_new" android:backgroundTint="@color/bottom_nav"
+        android:drawableStart="@drawable/profile" android:drawablePadding="25dp"
+        android:drawableTint="@color/hint" android:fontFamily="@font/poppins_light"
+        android:hint="@string/nome_completo" android:inputType="textPersonName"
+        android:padding="13dp" android:textColor="@color/white" android:textColorHint="@color/hint"
+        android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3" />
+
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/signupEmail"
+        android:layout_width="344dp" android:layout_height="65.52dp"
+        android:layout_marginTop="19.62dp" android:background="@drawable/button_new"
+        android:backgroundTint="@color/bottom_nav" android:drawableStart="@drawable/email"
+        android:drawablePadding="25dp" android:drawableTint="@color/hint"
+        android:fontFamily="@font/poppins_light" android:hint="@string/email"
+        android:inputType="textEmailAddress" android:padding="13dp" android:textColor="@color/white"
+        android:textColorHint="@color/hint" android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupName" />
+
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/signupPassword"
+        android:layout_width="344dp" android:layout_height="65.52dp"
+        android:layout_marginTop="19.62dp" android:background="@drawable/button_new"
+        android:backgroundTint="@color/bottom_nav" android:drawableStart="@drawable/password"
+        android:drawablePadding="25dp" android:hint="@string/senha" android:inputType="textPassword"
+        android:padding="13dp" android:textColor="@color/white" android:textColorHint="@color/hint"
+        android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText android:id="@+id/signupConfirmPassword"
+        android:layout_width="344dp" android:layout_height="65.52dp"
+        android:layout_marginTop="19.62dp" android:background="@drawable/button_new"
+        android:backgroundTint="@color/bottom_nav" android:drawableStart="@drawable/password"
+        android:drawablePadding="25dp" android:fontFamily="@font/poppins_light"
+        android:hint="@string/confirmar_senha" android:inputType="textPassword"
+        android:padding="13dp" android:textColor="@color/white" android:textColorHint="@color/hint"
+        android:textSize="16sp" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnSignup"
+        android:layout_width="344dp" android:layout_height="65.42dp" android:layout_marginTop="24dp"
+        android:background="@drawable/button_new" android:fontFamily="@font/poppins_semi_bold"
+        android:text="@string/cadastre_se" android:textColor="@color/white" android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signupConfirmPassword" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="11.48dp" android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSignup">
+
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:fontFamily="@font/poppins_regular"
+            android:text="@string/j_possui_conta" android:textColor="@color/hint"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView android:id="@+id/redirectLogin"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium" android:padding="5dp"
+            android:text="@string/login" android:textColor="@color/white" android:textSize="16sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,6 +6,16 @@
     <string name="registros">Registros</string>
     <string name="ol">Olá,</string>
     <string name="criar_novo_registro">Criar novo registro</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
+    <string name="n_o_possui_conta">Não possui conta?</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="developer">CrAn</string>
+    <string name="nome_completo">Nome completo</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="j_possui_conta">Já possui conta?</string>
 
 
 </resources>

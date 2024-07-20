@@ -1,15 +1,14 @@
 package com.cran.lis_health
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.cran.lis_health.databinding.ActivityMainBinding
-import com.google.android.material.bottomappbar.BottomAppBar
-import com.google.android.material.bottomnavigation.LabelVisibilityMode
-import com.google.android.material.tabs.TabLayout.LabelVisibility
+import com.cran.lis_health.fragments.Menu
+import com.cran.lis_health.fragments.Profile
+import com.cran.lis_health.fragments.Registers
+import com.cran.lis_health.fragments.Settings
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,8 +29,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.register -> replaceFragment(Registers())
                 R.id.settings -> replaceFragment((Settings()))
                 else -> {
-
-                }
+               }
 
 
             }
