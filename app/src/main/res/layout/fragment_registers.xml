@@ -61,9 +61,9 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/registerList"
         android:layout_width="match_parent"
-        android:padding="5dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
+        android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@id/btn_newRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,4 +85,19 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="VisualLintButtonSize" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnAlert"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/button_new"
+        android:padding="25dp"
+        android:src="@drawable/alert"
+        android:tooltipText="@string/pressione_para_pedir_ajuda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

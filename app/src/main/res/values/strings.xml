@@ -16,6 +16,7 @@
     <string name="nome_completo">Nome completo</string>
     <string name="confirmar_senha">Confirmar senha</string>
     <string name="j_possui_conta">Já possui conta?</string>
+    <string name="pressione_para_pedir_ajuda">Pressione para pedir ajuda</string>
 
 
 </resources>
