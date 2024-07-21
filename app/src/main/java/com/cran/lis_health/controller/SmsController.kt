@@ -27,7 +27,11 @@ class SmsController(private val context: Context, private val activity: Activity
             try {
                 val smsManager: SmsManager = SmsManager.getDefault()
                 smsManager.sendTextMessage(phoneNumber, null, message, null, null)
-
+                Toast.makeText(
+                    context,
+                    "SMS Enviado $message",
+                    Toast.LENGTH_LONG
+                ).show()
             } catch (e: Exception) {
                 Toast.makeText(
                     context,
