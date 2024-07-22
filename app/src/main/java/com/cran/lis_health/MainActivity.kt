@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.cran.lis_health.databinding.ActivityMainBinding
-import com.cran.lis_health.fragments.Menu
+import com.cran.lis_health.fragments.Home
 import com.cran.lis_health.fragments.Profile
 import com.cran.lis_health.fragments.Registers
 import com.cran.lis_health.fragments.Settings
@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        replaceFragment(Menu())
+        replaceFragment(Home())
         binding.bottomNav.setOnItemSelectedListener {
 
             when (it.itemId) {
-                R.id.menu -> replaceFragment(Menu())
+                R.id.menu -> replaceFragment(Home())
                 R.id.profile -> replaceFragment(Profile())
                 R.id.register -> replaceFragment(Registers())
                 R.id.settings -> replaceFragment((Settings()))

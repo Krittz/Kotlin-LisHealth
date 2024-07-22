@@ -7,5 +7,6 @@
     <color name="nav_icon">#777E99</color>
     <color name="active">#7A12FF</color>
     <color name="hint">#C2C3CB</color>
+    <color name="alert">#C38A33F2</color>
 
 </resources>

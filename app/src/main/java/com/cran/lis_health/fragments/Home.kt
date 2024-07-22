@@ -2,8 +2,6 @@ package com.cran.lis_health.fragments
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.location.Address
-import android.location.Geocoder
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -17,9 +15,8 @@ import com.cran.lis_health.R
 import com.cran.lis_health.controller.SmsController
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
-import java.util.*
 
-class Menu : Fragment() {
+class Home : Fragment() {
 
     private lateinit var smsController: SmsController
 
@@ -33,7 +30,7 @@ class Menu : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_menu, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext())
         smsController = SmsController(requireContext(), requireActivity())
