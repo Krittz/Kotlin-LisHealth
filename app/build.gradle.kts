@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation("com.google.android.gms:play-services-location:21.3.0")
     implementation(libs.play.services.identity)
+    implementation("org.mindrot:jbcrypt:0.4")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

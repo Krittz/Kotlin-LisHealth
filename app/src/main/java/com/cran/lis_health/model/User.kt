@@ -10,6 +10,6 @@ data class User(
     val fullName: String,
     val cpf: String,
     val rg: String,
-    val birth: LocalDateTime,
-    val address: Address
-)
+
+
+    )
