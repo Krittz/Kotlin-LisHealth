@@ -53,7 +53,6 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/button_new"
         android:backgroundTint="@color/alert"
-        app:layout_constraintBottom_toTopOf="@id/cardLastApply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topPanel">
@@ -99,91 +98,61 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardLastApply"
         android:layout_width="328dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="17dp"
-        android:background="@drawable/button_new"
-        android:backgroundTint="@color/bottom_nav"
+        android:layout_height="328dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_newRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/memo">
+        app:layout_constraintTop_toBottomOf="@+id/memo">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/cardTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="24dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="@string/ltimo_registro"
-            android:textColor="@color/hint"
-            android:textSize="12sp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBreakfast"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/bottom_nav"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/lastTime"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:drawableStart="@drawable/clock"
-            android:drawablePadding="10dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="13:00"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+            app:layout_constraintTop_toTopOf="parent">
 
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/lastDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="12dp"
-            android:drawableStart="@drawable/calendar"
-            android:drawablePadding="10dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="14-07-2024"
-            android:textColor="@color/white"
-            android:textSize="16sp"
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLunch"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/bottom_nav"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/cardTitle" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/lastGlucose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="12dp"
-            android:drawableStart="@drawable/blood"
-            android:drawablePadding="10dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="156mmol/L"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/lastTime" />
+        </androidx.cardview.widget.CardView>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/lastInsulin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="72dp"
-            android:drawableStart="@drawable/pharmacy"
-            android:drawablePadding="10dp"
-            android:fontFamily="@font/poppins_light"
-            android:text="16u"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/lastDate" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSnack"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/bottom_nav"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDinner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/bottom_nav"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
